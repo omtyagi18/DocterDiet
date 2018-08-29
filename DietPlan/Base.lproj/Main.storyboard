@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DietPlan" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ol3-WQ-VeR">
+                                <rect key="frame" x="0.0" y="44" width="375" height="64"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DOCTER DIET PLAN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CBQ-pZ-cHT">
+                                        <rect key="frame" x="93.000000000000014" y="0.0" width="189.33333333333337" height="64"/>
+                                        <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="22"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="CBQ-pZ-cHT" firstAttribute="top" secondItem="Ol3-WQ-VeR" secondAttribute="top" id="2p9-6J-CaP"/>
+                                    <constraint firstAttribute="bottom" secondItem="CBQ-pZ-cHT" secondAttribute="bottom" id="eLf-pz-jDD"/>
+                                    <constraint firstAttribute="height" constant="64" id="hkr-M8-qMJ"/>
+                                    <constraint firstItem="CBQ-pZ-cHT" firstAttribute="centerX" secondItem="Ol3-WQ-VeR" secondAttribute="centerX" id="wNB-bc-vY7"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XEi-nW-Xdd">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5TT-hL-RGz">
+                                <rect key="frame" x="0.0" y="108" width="375" height="670"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="GK3-2B-5ce">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Bwz-Wb-N6W">
+                                            <rect key="frame" x="10" y="10.000000000000002" width="355" height="29.666666666666671"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXJ-5c-hAM">
+                                                    <rect key="frame" x="0.0" y="0.0" width="355" height="29.666666666666668"/>
+                                                    <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="21"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="Bwz-Wb-N6W" secondAttribute="bottom" constant="10" id="3Gu-Si-RtP"/>
+                                        <constraint firstAttribute="trailing" secondItem="Bwz-Wb-N6W" secondAttribute="trailing" constant="10" id="Sge-tc-YzC"/>
+                                        <constraint firstItem="Bwz-Wb-N6W" firstAttribute="top" secondItem="GK3-2B-5ce" secondAttribute="top" constant="10" id="bDF-S2-Y4A"/>
+                                        <constraint firstItem="Bwz-Wb-N6W" firstAttribute="leading" secondItem="GK3-2B-5ce" secondAttribute="leading" constant="10" id="wRo-2V-AAA"/>
+                                    </constraints>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="DietTableCell" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="DietTableCell" rowHeight="95" id="I0F-ym-9dJ" customClass="DietTableCell" customModule="DietPlan" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="77" width="375" height="95"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="I0F-ym-9dJ" id="4XM-G7-q0a">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="94.666666666666671"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Fwy-eN-FGi">
+                                                    <rect key="frame" x="25" y="21" width="325" height="53"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="N7a-f6-gs2">
+                                                            <rect key="frame" x="0.0" y="0.0" width="325" height="24"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food  :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jDz-cg-Nbd">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="60" height="24"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="60" id="WbB-bh-PJl"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zeZ-LP-plu">
+                                                                    <rect key="frame" x="65" y="0.0" width="260" height="24"/>
+                                                                    <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="jDz-cg-Nbd" firstAttribute="baseline" secondItem="zeZ-LP-plu" secondAttribute="firstBaseline" id="yYZ-0h-8N6"/>
+                                                            </constraints>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="qoj-sL-jg2">
+                                                            <rect key="frame" x="0.0" y="34" width="325" height="19"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time  :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bkA-aI-64N">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="60" height="19"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="60" id="ADb-ya-J4b"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="04u-bq-5L4">
+                                                                    <rect key="frame" x="65" y="0.0" width="260" height="19"/>
+                                                                    <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="Fwy-eN-FGi" firstAttribute="leading" secondItem="4XM-G7-q0a" secondAttribute="leadingMargin" constant="10" id="7j8-FG-spV"/>
+                                                <constraint firstItem="Fwy-eN-FGi" firstAttribute="top" secondItem="4XM-G7-q0a" secondAttribute="topMargin" constant="10" id="eUj-2E-fuZ"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Fwy-eN-FGi" secondAttribute="bottom" constant="10" id="pXh-sc-2wa"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Fwy-eN-FGi" secondAttribute="trailing" constant="10" id="xEr-yj-Bvx"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="Food_label" destination="zeZ-LP-plu" id="eDX-o4-jLi"/>
+                                            <outlet property="Time_label" destination="04u-bq-5L4" id="KZs-bW-oHx"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="ydE-dQ-InU"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="3bK-sp-VS9"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ol3-WQ-VeR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="32m-eI-tQs"/>
+                            <constraint firstAttribute="trailing" secondItem="XEi-nW-Xdd" secondAttribute="trailing" id="B6D-Hs-HXm"/>
+                            <constraint firstItem="Ol3-WQ-VeR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Gtd-aI-pok"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5TT-hL-RGz" secondAttribute="trailing" id="VDF-wS-CqA"/>
+                            <constraint firstItem="Ol3-WQ-VeR" firstAttribute="top" secondItem="XEi-nW-Xdd" secondAttribute="bottom" id="Zan-xS-22G"/>
+                            <constraint firstItem="XEi-nW-Xdd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bHZ-bL-NGH"/>
+                            <constraint firstItem="5TT-hL-RGz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fWL-bn-CLH"/>
+                            <constraint firstItem="Ol3-WQ-VeR" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="iF5-qQ-oat"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5TT-hL-RGz" secondAttribute="bottom" id="kfo-La-bBY"/>
+                            <constraint firstItem="XEi-nW-Xdd" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="rGf-M7-waU"/>
+                            <constraint firstItem="5TT-hL-RGz" firstAttribute="top" secondItem="Ol3-WQ-VeR" secondAttribute="bottom" id="rjy-71-NXL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="Diet_Table" destination="5TT-hL-RGz" id="KCG-uy-epf"/>
+                        <outlet property="Duration_label" destination="fXJ-5c-hAM" id="m2H-3N-08b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.00492610837438"/>
+        </scene>
+    </scenes>
+</document>
